@@ -21,7 +21,7 @@ trait InventoryServices {
         case "rating high to low" => inventory.listOfItems.filter(_.category == category)
           .sortBy(_.rating)
 
-        case "price high to low" => inventory.listOfItems.filter(_.category == category)
+        case "rating high to low" => inventory.listOfItems.filter(_.category == category)
           .sortBy(_.rating).reverse
 
         case "default" => inventory.listOfItems.filter(_.category == category)
